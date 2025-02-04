@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ugli6utnvmpo"
+path="res://.godot/imported/chip_500.obj-9f9188ab59ce124725ed84dff591b5c0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/chip_500.obj-9f9188ab59ce124725ed84dff591b5c0.mesh"]
+
+source_file="res://assets/textures/chips/chip_500.obj"
+dest_files=["res://.godot/imported/chip_500.obj-9f9188ab59ce124725ed84dff591b5c0.mesh", "res://.godot/imported/chip_500.obj-9f9188ab59ce124725ed84dff591b5c0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

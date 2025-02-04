@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dx7uphh4sf2g8"
+path="res://.godot/imported/chip_10.obj-fbc8f12f9dfaa2bcaef655414bd6724d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/chip_10.obj-fbc8f12f9dfaa2bcaef655414bd6724d.mesh"]
+
+source_file="res://assets/textures/chips/chip_10.obj"
+dest_files=["res://.godot/imported/chip_10.obj-fbc8f12f9dfaa2bcaef655414bd6724d.mesh", "res://.godot/imported/chip_10.obj-fbc8f12f9dfaa2bcaef655414bd6724d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
