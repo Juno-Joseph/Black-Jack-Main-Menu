@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://5rdqdr8582ww"]
+
+[ext_resource type="Texture2D" uid="uid://bo3u3u3g3ukg6" path="res://assets/textures/cards/card_clubs_02.png" id="1_sy8p7"]
+[ext_resource type="Texture2D" uid="uid://barldvsc57nvy" path="res://assets/textures/cards/card_back.png" id="2_rpte1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3v3ma"]
+albedo_texture = ExtResource("1_sy8p7")
+albedo_texture_force_srgb = true
+uv1_scale = Vector3(2.985, 2, 1)
+uv1_world_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_g3uss"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5g0jj"]
+albedo_texture = ExtResource("2_rpte1")
+uv1_scale = Vector3(3, 2, 1)
+texture_filter = 0
+
+[node name="Card" type="Node3D"]
+
+[node name="front" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.0335e-08, 0, 1.26133, 0, 0.0551843, 0, -1.15153, 0, -5.51344e-08, 0, 0.770676, 0)
+material_override = SubResource("StandardMaterial3D_3v3ma")
+mesh = SubResource("BoxMesh_g3uss")
+
+[node name="back" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.74451, 0, 0, 0, 0.0551799, 0, 0, 0, 0.969625, 0, 0.558799, 0)
+material_override = SubResource("StandardMaterial3D_5g0jj")
+mesh = SubResource("BoxMesh_g3uss")
+
+[node name="border" type="MeshInstance3D" parent="."]

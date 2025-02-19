@@ -207,6 +207,7 @@ text = "Back"
 alignment = 0
 
 [node name="settings_popup" type="ColorRect" parent="Camera3D/main_menu_ui"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

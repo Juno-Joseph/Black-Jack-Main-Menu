@@ -4,11 +4,12 @@ var fullscreen = false
 var sound = true
 
 func _on_new_game_button_pressed():
-	pass # Replace with function body.
+	DataManager.reset_all_data()
+	get_tree().change_scene_to_file("res://scenes/game/game.tscn")
 
 
 func _on_continue_button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/game/game.tscn")
 
 
 func _on_settings_button_pressed():
@@ -44,6 +45,7 @@ func _on_setting_fullscreen_pressed():
 
 func _on_setting_sound_button_pressed():
 	sound = !sound
+	DataManager.set_sound_settings(sound)
 	
 	if sound:
 		$settings_popup/settings_items/sound_setting/setting_sound_button.text = "On"

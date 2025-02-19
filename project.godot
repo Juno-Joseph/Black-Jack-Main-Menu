@@ -14,3 +14,11 @@ config/name="BlackJack"
 run/main_scene="res://scenes/menus/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+DataManager="*res://scripts/global/data_manager.gd"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
