@@ -1,32 +1,52 @@
-[gd_scene load_steps=6 format=3 uid="uid://5rdqdr8582ww"]
+[gd_scene load_steps=8 format=3 uid="uid://5rdqdr8582ww"]
 
-[ext_resource type="Texture2D" uid="uid://bo3u3u3g3ukg6" path="res://assets/textures/cards/card_clubs_02.png" id="1_sy8p7"]
 [ext_resource type="Texture2D" uid="uid://barldvsc57nvy" path="res://assets/textures/cards/card_back.png" id="2_rpte1"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2as57"]
+load_path = "res://.godot/imported/card_clubs_02.png-33a11aa1d15da2e0013e16e7a065f1c4.s3tc.ctex"
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3v3ma"]
-albedo_texture = ExtResource("1_sy8p7")
+transparency = 2
+alpha_scissor_threshold = 1.0
+alpha_antialiasing_mode = 0
+shading_mode = 0
+albedo_texture = SubResource("CompressedTexture2D_2as57")
 albedo_texture_force_srgb = true
-uv1_scale = Vector3(2.985, 2, 1)
+uv1_scale = Vector3(3, 2, 1)
 uv1_world_triplanar = true
 texture_filter = 0
 
 [sub_resource type="BoxMesh" id="BoxMesh_g3uss"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5g0jj"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m4kfo"]
+albedo_color = Color(0.117647, 0.137255, 0.176471, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0su13"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rr2gw"]
+transparency = 2
+alpha_scissor_threshold = 1.0
+alpha_antialiasing_mode = 0
+shading_mode = 0
 albedo_texture = ExtResource("2_rpte1")
+albedo_texture_force_srgb = true
 uv1_scale = Vector3(3, 2, 1)
+uv1_world_triplanar = true
 texture_filter = 0
 
 [node name="Card" type="Node3D"]
 
 [node name="front" type="MeshInstance3D" parent="."]
-transform = Transform3D(-5.0335e-08, 0, 1.26133, 0, 0.0551843, 0, -1.15153, 0, -5.51344e-08, 0, 0.770676, 0)
+transform = Transform3D(-5.0335e-08, 0, 1.26133, 0, 0.00173024, 0, -1.15153, 0, -5.51344e-08, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_3v3ma")
 mesh = SubResource("BoxMesh_g3uss")
 
-[node name="back" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.74451, 0, 0, 0, 0.0551799, 0, 0, 0, 0.969625, 0, 0.558799, 0)
-material_override = SubResource("StandardMaterial3D_5g0jj")
-mesh = SubResource("BoxMesh_g3uss")
+[node name="side" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.152, 0, 0, 0, 0.001, 0, 0, 0, 0.730868, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_m4kfo")
+mesh = SubResource("BoxMesh_0su13")
 
-[node name="border" type="MeshInstance3D" parent="."]
+[node name="back" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.0335e-08, 0, 1.26133, 0, 0.00173024, 0, -1.15153, 0, -5.51344e-08, 0, -0.001, 0)
+material_override = SubResource("StandardMaterial3D_rr2gw")
+mesh = SubResource("BoxMesh_g3uss")
