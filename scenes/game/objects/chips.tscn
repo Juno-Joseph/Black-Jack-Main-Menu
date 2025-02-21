@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8dauucttg65m"]
+
+[ext_resource type="Script" path="res://scripts/game/objects/chips.gd" id="1_i6hyh"]
+[ext_resource type="PackedScene" uid="uid://bieho31hgin5j" path="res://scenes/chips/chip_black.tscn" id="2_w8n1w"]
+
+[node name="Chips" type="Node3D"]
+script = ExtResource("1_i6hyh")
+
+[node name="chip_black" parent="." instance=ExtResource("2_w8n1w")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.101346, 0.028173, 0.19959)
+
+[node name="chip_black2" parent="." instance=ExtResource("2_w8n1w")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.101346, 0.0795925, 0.19959)
